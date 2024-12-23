@@ -6,29 +6,29 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 export default function Research() {
     return (
       <div className="min-h-screen bg-white">
-        {/* 顶部背景区域 */}
-        <div className="w-full relative bg-gray-50 py-16" 
-           style={{
-             backgroundImage: `url(${basePath}/background.jpg)`,
-             backgroundSize: '100%',
-             backgroundPosition: 'center 30%',
-             backgroundRepeat: 'no-repeat',
-           }}>
-        {/* 半透明遮罩 确保文字清晰可见 */}
-        <div className="absolute inset-0 bg-white/60"></div>
-        
-        <div className="relative max-w-4xl mx-auto text-center px-8">
-          {/* 圆形头像 */}
-          <div className="w-48 h-48 mx-auto mb-8">
-            <Image 
-              src={`${basePath}/profile.jpg`} 
-              alt="朱嘉文" 
-              width={192}
-              height={192}
-              className="rounded-full object-cover"
-              style={{ objectPosition: 'center 20%' }}
-            />
-          </div>
+        {/* 顶部背景区域 - 增加了上边距 */}
+        <div className="w-full relative bg-gray-50 py-24" 
+            style={{
+              backgroundImage: 'url(/background.jpg)',
+              backgroundSize: '80%',
+              backgroundPosition: 'center 20%',
+              backgroundRepeat: 'no-repeat',
+            }}>
+          <div className="absolute inset-0 bg-white/50"></div>
+          
+          <div className="relative max-w-4xl mx-auto text-center px-8">
+            {/* 圆形头像 - 确保完美圆形 */}
+            <div className="w-48 h-48 mx-auto mb-8 overflow-hidden">
+              <img 
+                src="/profile.jpg" 
+                alt="朱嘉文" 
+                className="rounded-full w-full h-full object-cover"
+                style={{ 
+                  objectPosition: 'center center',
+                  aspectRatio: '1 / 1'
+                }}
+              />
+            </div>
             
             {/* 姓名和职位 */}
             <h1 className="text-3xl font-bold mb-4 text-gray-900">朱嘉文 Jiawen Zhu, Ph.D.</h1>

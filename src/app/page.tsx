@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* 顶部背景区域 */}
-      <div className="w-full relative bg-gray-50 py-16" 
+      <div className="w-full relative bg-gray-50 py-24" 
            style={{
              backgroundImage: 'url(/background.jpg)',
              backgroundSize: '80%',
@@ -53,7 +53,7 @@ export default function Home() {
 
       {/* 页脚 */}
       <footer className="mt-16 text-center text-sm text-gray-500 pb-8">
-        © 2024 朱���文 Jiawen Zhu
+        © 2024 朱嘉文 Jiawen Zhu
       </footer>
     </div>
   )
