@@ -3,8 +3,6 @@ import { FaLinkedin, FaGoogle } from 'react-icons/fa';
 import { SiResearchgate, SiOrcid } from 'react-icons/si';
 import Image from 'next/image'
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
