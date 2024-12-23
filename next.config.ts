@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+const repo = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    path: `${repo}/_next/image`,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: isGithubActions ? repo : '',
+  assetPrefix: isGithubActions ? repo : '',
   distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true,

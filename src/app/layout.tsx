@@ -5,8 +5,8 @@ import '@/styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Your Academic Website',
-  description: 'Personal academic portfolio',
+  title: '朱嘉文 Jiawen Zhu',
+  description: '华东师范大学 讲师',
 }
 
 export default function RootLayout({
