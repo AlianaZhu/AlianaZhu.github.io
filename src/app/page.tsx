@@ -1,69 +1,42 @@
-import Link from "next/link";
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* 顶部背景区域 */}
-      <div className="w-full relative bg-gray-50 py-16" 
-           style={{
-             backgroundImage: 'url(/background.jpg)',
-             backgroundSize: '100%',
-             backgroundPosition: 'center 30%',
-             backgroundRepeat: 'no-repeat',
-           }}>
-        {/* 半透明遮罩 确保文字清晰可见 */}
-        <div className="absolute inset-0 bg-white/60"></div>
-        
-        <div className="relative max-w-4xl mx-auto text-center px-8">
-          {/* 圆形头像 */}
-          <div className="w-48 h-48 mx-auto mb-8">
-            <img 
-              src="/profile.jpg" 
-              alt="朱嘉文" 
-              className="rounded-full w-full h-full object-cover"
-              style={{ objectPosition: 'center 20%' }}
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <div className="flex items-center justify-center">
+            <Image
+              src="/avatar.jpg"
+              alt="Profile"
+              width={180}
+              height={180}
+              className="rounded-full"
+              priority
             />
           </div>
-          
-          {/* 姓名和职位 */}
-          <h1 className="text-3xl font-bold mb-4 text-gray-900">朱嘉文 Jiawen Zhu, Ph.D.</h1>
-          <p className="text-2xl text-gray-850 mb-4">讲师 Lecturer</p>
         </div>
       </div>
 
-      {/* 导航栏 - 添加阴影和重叠效果 */}
-      <div className="relative -mt-8 mb-12">
-        <nav className="max-w-4xl mx-auto">
-          <div className="bg-white shadow-md rounded-full px-8 py-4 flex justify-center space-x-8 text-gray-800">
-            <Link href="/" className="hover:underline font-bold">主页 Home</Link>
-            <Link href="/research" className="hover:underline">研究 Research</Link>
-            <Link href="/teaching" className="hover:underline">教学 Teaching</Link>
-            <Link href="/services" className="hover:underline">服务 Services</Link>
-            <Link href="/contact" className="hover:underline">联系方式 Contact</Link>
-          </div>
-        </nav>
+      <div className="relative flex place-items-center">
+        <h1 className="text-4xl font-bold">Your Name</h1>
       </div>
 
-      {/* 主要内容区域 */}
-      <div className="max-w-4xl mx-auto px-8">
-        {/* 自我介绍 */}
-        <div className="max-w-2xl mx-auto">
-          {/* 中文自我介绍 */}
-          <p className="text-lg leading-relaxed mb-8">
-            大家好，我是朱嘉文。目前是华东师范大学教育学部教育信息技术学系讲师。我博士毕业于美国佛罗里达大学，硕士毕业于美国匹兹堡大学。我的研究方向是技术赋能教育教学、技术辅助学习、技术支持的学习诊断等。
-          </p>
-          
-          {/* 英文自我介绍 */}
-          <p className="text-lg leading-relaxed mb-8">
-            Hello, I am Jiawen Zhu. I am currently a lecturer in the Department of Educational Information Technology, Faculty of Education at East China Normal University. I received my Ph.D. from the University of Florida and my master's degree from the University of Pittsburgh, USA. My research interests focus on technology-enhanced teaching and learning, computer-assisted learning, and technology-supported learning analytics.
-          </p>
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
+        <div className="group rounded-lg border border-transparent px-5 py-4">
+          <h2 className="mb-3 text-2xl font-semibold">
+            Education
+          </h2>
+          {/* Add your education details */}
+        </div>
+
+        <div className="group rounded-lg border border-transparent px-5 py-4">
+          <h2 className="mb-3 text-2xl font-semibold">
+            Experience
+          </h2>
+          {/* Add your experience details */}
         </div>
       </div>
-
-      {/* 页脚 */}
-      <footer className="mt-16 text-center text-sm text-gray-500 pb-8">
-        © 2024 朱嘉文 Jiawen Zhu
-      </footer>
-    </div>
+    </main>
   )
-}
+} 
