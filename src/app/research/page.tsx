@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image'
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+import Image from 'next/image';
 
 export default function Research() {
     return (
@@ -18,15 +16,16 @@ export default function Research() {
           
           <div className="relative max-w-4xl mx-auto text-center px-8">
             {/* 圆形头像 - 确保完美圆形 */}
-            <div className="w-48 h-48 mx-auto mb-8 overflow-hidden">
-              <img 
-                src="/profile.jpg" 
-                alt="朱嘉文" 
-                className="rounded-full w-full h-full object-cover"
+            <div className="w-48 h-48 mx-auto mb-8 overflow-hidden relative">
+              <Image
+                src="/profile.jpg"
+                alt="朱嘉文"
+                fill
+                className="rounded-full object-cover"
                 style={{ 
                   objectPosition: 'center center',
-                  aspectRatio: '1 / 1'
                 }}
+                priority
               />
             </div>
             
@@ -81,7 +80,6 @@ export default function Research() {
                 <li>Zhu, J., He, H., Zhao, Y., & Cheng, M (2024). Does participating in online communities enhance the effectiveness and experience of micro-learning? Evidence from a randomized control trial. Humanities and Social Science Communications, 11(1), 1-10. [SSCI-Q1, IF=3.70]</li>
                 <li>Zhu, J., & Dawson, K. (2023). Differences in sense of community and participation between lurkers and posters in informal online education-related communities. Behaviour & Information Technology, 1-14. [SSCI-Q2, IF=3.32]</li>
                 <li>Zhu, J., & Dawson, K. (2023). Lurkers versus posters: Perceptions of learning in informal social media-based communities. British Journal of Educational Technology. [SSCI-Q1, IF=5.27]</li>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <li>Kim, D., Jo, I. H., Song, D., Zheng, H., Li, J., Zhu, J., ... &amp; Xu, Z. (2021). Self-regulated learning strategies and students&apos; video engagement trajectory in a video-based asynchronous online course: a Bayesian latent growth modeling approach. Asia Pacific - Education Review, 1-13. [SSCI-Q3, IF=2.25]</li>
               </ul>
             </div>
