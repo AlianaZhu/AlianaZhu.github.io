@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FaLinkedin, FaGoogle } from 'react-icons/fa';
 import { SiResearchgate, SiOrcid } from 'react-icons/si';
+import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -19,11 +20,13 @@ export default function Contact() {
         <div className="relative max-w-4xl mx-auto text-center px-8">
           {/* 圆形头像 */}
           <div className="w-48 h-48 mx-auto mb-8">
-            <img 
+            <Image 
               src="/profile.jpg" 
               alt="朱嘉文" 
               className="rounded-full w-full h-full object-cover"
               style={{ objectPosition: 'center 20%' }}
+              width={192}
+              height={192}
             />
           </div>
           
