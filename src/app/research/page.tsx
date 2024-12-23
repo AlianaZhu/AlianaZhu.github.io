@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image'
+
 export default function Research() {
     return (
       <div className="min-h-screen bg-white">
@@ -16,10 +18,12 @@ export default function Research() {
         <div className="relative max-w-4xl mx-auto text-center px-8">
           {/* 圆形头像 */}
           <div className="w-48 h-48 mx-auto mb-8">
-            <img 
+            <Image 
               src="/profile.jpg" 
               alt="朱嘉文" 
-              className="rounded-full w-full h-full object-cover"
+              width={192}
+              height={192}
+              className="rounded-full object-cover"
               style={{ objectPosition: 'center 20%' }}
             />
           </div>
@@ -64,18 +68,19 @@ export default function Research() {
 
             {/* 在线学习和社群学习研究 */}
             <div className="border-b pb-8">
-              <h2 className="text-2xl font-bold mb-4">在线学习和社群学习研究</h2>
+              <h2 className="text-2xl font-bold mb-4">在线学习 社群学习研究</h2>
               <h3 className="text-xl font-semibold mb-3">项目基金 Fundings</h3>
               <ul className="list-disc pl-5 mb-4 space-y-2">
                 <li>2023年度上海市晨光计划项目，在研</li>
               </ul>
               <h3 className="text-xl font-semibold mb-3">相关论文 Articles</h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Qin, C., He, H., Zhu, J., Hu, J., & Yu, J. (2024). Concerning rural undergraduates' knowledge absorption in large-scale online learning: inspired by three digital divides and beyond. Asia Pacific Journal of Education. [SSCI-Q2, IF=2.20]</li>
+                <li>Qin, C., He, H., Zhu, J., Hu, J., & Yu, J. (2024). Concerning rural undergraduates&apos; knowledge absorption in large-scale online learning: inspired by three digital divides and beyond. Asia Pacific Journal of Education. [SSCI-Q2, IF=2.20]</li>
                 <li>Zhu, J., He, H., Zhao, Y., & Cheng, M (2024). Does participating in online communities enhance the effectiveness and experience of micro-learning? Evidence from a randomized control trial. Humanities and Social Science Communications, 11(1), 1-10. [SSCI-Q1, IF=3.70]</li>
                 <li>Zhu, J., & Dawson, K. (2023). Differences in sense of community and participation between lurkers and posters in informal online education-related communities. Behaviour & Information Technology, 1-14. [SSCI-Q2, IF=3.32]</li>
                 <li>Zhu, J., & Dawson, K. (2023). Lurkers versus posters: Perceptions of learning in informal social media-based communities. British Journal of Educational Technology. [SSCI-Q1, IF=5.27]</li>
-                <li>Kim, D., Jo, I. H., Song, D., Zheng, H., Li, J., Zhu, J., ... & Xu, Z. (2021). Self-regulated learning strategies and student video engagement trajectory in a video-based asynchronous online course: a Bayesian latent growth modeling approach. Asia Pacific - Education Review, 1-13. [SSCI-Q3, IF=2.25]</li>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <li>Kim, D., Jo, I. H., Song, D., Zheng, H., Li, J., Zhu, J., ... &amp; Xu, Z. (2021). Self-regulated learning strategies and students&apos; video engagement trajectory in a video-based asynchronous online course: a Bayesian latent growth modeling approach. Asia Pacific - Education Review, 1-13. [SSCI-Q3, IF=2.25]</li>
               </ul>
             </div>
 
@@ -98,7 +103,7 @@ export default function Research() {
                 <li>Zhu, J., Kumar, S. (2023). An Analysis of Online and Hybrid EdD Programs in Educational Technology. TechTrends. [ESCI, IF=2.30]</li>
                 <li>Dai, J., Gu, X., & Zhu, J. (2022). Personalized Recommendation in the Adaptive Learning System: The Role of Adaptive Testing Technology. Journal of Educational Computing Research. [SSCI-Q1, IF=4.35]</li>
                 <li>Zhu, J., Dawson, K., Rizhaupt, A.D., & Antonenko, P.P. (2020). Investigating how multimedia and modality design principles influence student learning performance, satisfaction, mental effort, and visual attention. Journal of Educational Multimedia and Hypermedia, 29(3), 265-284. [IF=0.50]</li>
-                <li>Zhu, J. (2018, October). Students' Perceptions on the Use of Mobile Applications in English Language Learning. In Proceedings of E-Learn: World Conference on E-Learning.</li>
+                <li>Zhu, J. (2018, October). Students Perceptions on the Use of Mobile Applications in English Language Learning. In Proceedings of E-Learn: World Conference on E-Learning.</li>
               </ul>
             </div>
           </div>

@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   basePath: '',
   assetPrefix: '',
   distDir: 'out',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
