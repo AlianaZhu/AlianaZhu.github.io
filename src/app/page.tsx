@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -15,15 +16,16 @@ export default function Home() {
         
         <div className="relative max-w-4xl mx-auto text-center px-8">
           {/* 圆形头像 */}
-          <div className="w-48 h-48 mx-auto mb-8 overflow-hidden">
-            <img 
-              src="/profile.jpg" 
-              alt="朱嘉文" 
-              className="rounded-full w-full h-full object-cover"
+          <div className="w-48 h-48 mx-auto mb-8 overflow-hidden relative">
+            <Image
+              src="/profile.jpg"
+              alt="朱嘉文"
+              fill
+              className="rounded-full object-cover"
               style={{ 
                 objectPosition: 'center center',
-                aspectRatio: '1 / 1'
               }}
+              priority
             />
           </div>
           
