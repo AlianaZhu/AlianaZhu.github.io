@@ -6,11 +6,13 @@ const Navbar = () => {
   const [lang, setLang] = useState('en')
   const router = useRouter()
   
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   const navigation = [
-    { name: { en: 'Home', zh: '主页' }, href: '/' },
-    { name: { en: 'Publications', zh: '发表论文' }, href: '/publications' },
-    { name: { en: 'Teaching', zh: '教学工作' }, href: '/teaching' },
-    { name: { en: 'Services', zh: '社会服务' }, href: '/services' },
+    { name: { en: 'Home', zh: '主页' }, href: `${basePath}/` },
+    { name: { en: 'Publications', zh: '发表论文' }, href: `${basePath}/publications` },
+    { name: { en: 'Teaching', zh: '教学工作' }, href: `${basePath}/teaching` },
+    { name: { en: 'Services', zh: '社会服务' }, href: `${basePath}/services` },
   ]
 
   return (

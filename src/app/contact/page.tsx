@@ -3,13 +3,15 @@ import { FaLinkedin, FaGoogle } from 'react-icons/fa';
 import { SiResearchgate, SiOrcid } from 'react-icons/si';
 import Image from 'next/image'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* 顶部背景区域 */}
       <div className="w-full relative bg-gray-50 py-16" 
            style={{
-             backgroundImage: 'url(/background.jpg)',
+             backgroundImage: `url(${basePath}/background.jpg)`,
              backgroundSize: '100%',
              backgroundPosition: 'center 30%',
              backgroundRepeat: 'no-repeat',
@@ -21,7 +23,7 @@ export default function Contact() {
           {/* 圆形头像 */}
           <div className="w-48 h-48 mx-auto mb-8">
             <Image 
-              src="/profile.jpg" 
+              src={`${basePath}/profile.jpg`}
               alt="朱嘉文" 
               className="rounded-full w-full h-full object-cover"
               style={{ objectPosition: 'center 20%' }}
