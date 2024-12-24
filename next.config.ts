@@ -5,9 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/AlianaZhu.github.io',
-  assetPrefix: '/AlianaZhu.github.io',
+  basePath: '',
+  assetPrefix: '',
   distDir: 'out',
+  trailingSlash: true,
 };
 
 export default nextConfig;
