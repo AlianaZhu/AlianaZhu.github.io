@@ -14,13 +14,13 @@
         
         .hero {
             position: relative;
-            width: 100%;
-            height: 100vh;
-            padding: 6rem 0;
+             width: 100%;
+             height: 70vh; /* 修改：从 100vh 改为 70vh，减小高度 */
+            padding: 4rem 0; /* 修改：减小内边距 */
             background-image: url("images/background.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-size: contain; /* 修改：确保背景图适应容器宽度 */
+             background-position: center top; /* 修改：图片从顶部开始 */
+             background-repeat: no-repeat;
         }
         
         .hero-overlay {
@@ -38,7 +38,7 @@
             margin: 0 auto;
             text-align: center;
             padding: 0 20px;
-            padding-top: 4rem;
+            padding-top: 2rem;
         }
         
         .profile-image {
@@ -52,7 +52,7 @@
         
         .nav {
             position: relative;
-            margin-top: -4rem;
+            margin-top: -2.5rem; 
             margin-bottom: 3rem;
         }
         
