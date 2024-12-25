@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>服务 - 朱嘉文 Jiawen Zhu</title>
+    <style>
+        /* 复用主页的基础样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            padding: 4rem 0;
+            background-image: url("images/background.jpg");
+            background-size: contain;
+            background-position: center top;
+            background-repeat: no-repeat;
+            margin-bottom: calc(1.5rem);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        
+        .profile {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+            padding-top: 2rem;
+        }
+        
+        .profile-image {
+            width: 192px;
+            height: 192px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+        
+        .nav {
+            position: relative;
+            margin-top: calc(-3.5rem - 2vh);
+            margin-bottom: 3rem;
+            z-index: 10;
+        }
+        
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-menu {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu a {
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-menu a.active {
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 服务页面特定样式 */
+        .service-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .service-section:last-child {
+            border-bottom: none;
+        }
+
+        .service-section h2 {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-list li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #718096;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="朱嘉文" class="profile-image">
+            <h1>朱嘉文 Jiawen Zhu, Ph.D.</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 1rem;">讲师 Lecturer</p>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="index.html">主页 Home</a>
+                <a href="research.html">研究 Research</a>
+                <a href="teaching.html">教学 Teaching</a>
+                <a href="services.html" class="active">服务 Services</a>
+                <a href="contact.html">联系方式 Contact</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <!-- 学术服务 -->
+        <div class="service-section">
+            <h2>学术服务 Academic Services</h2>
+            <h3>期刊审稿 Journal Review</h3>
+            <ul class="service-list">
+                <li>British Journal of Educational Technology [SSCI-Q1]</li>
+                <li>Computers & Education [SSCI-Q1]</li>
+                <li>Journal of Educational Computing Research [SSCI-Q1]</li>
+                <li>Interactive Learning Environments [SSCI-Q2]</li>
+                <li>Research and Practice in Technology Enhanced Learning [SSCI-Q2]</li>
+                <li>Asia Pacific Education Review [SSCI-Q3]</li>
+            </ul>
+        </div>
+
+        <!-- 学术组织 -->
+        <div class="service-section">
+            <h2>学术组织 Academic Organizations</h2>
+            <ul class="service-list">
+                <li>American Educational Research Association (AERA)</li>
+                <li>Association for Educational Communications and Technology (AECT)</li>
+                <li>International Society of the Learning Sciences (ISLS)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © 2024 朱嘉文 Jiawen Zhu
+    </footer>
+</body>
+</html> 
