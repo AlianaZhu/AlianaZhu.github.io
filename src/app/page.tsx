@@ -50,7 +50,18 @@ export default function Home() {
 
       {/* 主页内容 */}
       <div className="max-w-4xl mx-auto px-8">
-        {/* 这里放主页的具体内容 */}
+        <div className="mb-12 text-left">
+          <p className="text-lg leading-relaxed mb-4">
+            我的研究兴趣包括：教育技术、在线学习、学习分析、游戏化学习、特殊教育技术等。
+            目前主要关注技术支持的阅读障碍干预、在线社群学习等方向。
+          </p>
+          <p className="text-lg leading-relaxed mb-4">
+            My research interests include: Educational Technology, Online Learning,
+            Learning Analytics, Gamification in Education, and Assistive Technology.
+            Currently focusing on technology-supported dyslexia intervention and
+            online community learning.
+          </p>
+        </div>
       </div>
 
       {/* 页脚 */}

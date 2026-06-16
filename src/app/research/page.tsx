@@ -65,6 +65,10 @@ export default function Research() {
               <li>Dawson, K., Zhu, J., Rizhaupt, A.D., Antonenko, P.P., Saunders, K., Wang, J. & Lombardino, L. (2021). The influence of the multimedia and modality principles on the learning outcomes, satisfaction, and mental effort of college students with and without dyslexia. Annals of Dyslexia. 1-23. [SSCI-Q2, IF=2.28]</li>
               <li>Dawson, K., Antonenko, P., Lane, H., & Zhu, J. (2019). Assistive Technologies to Support Students with Dyslexia. TEACHING Exceptional Children, 51(3), 226-239. [ESCI, IF=1.13]</li>
             </ul>
+            <h3 className="text-xl font-semibold mb-3 mt-6">软件著作权 Software Copyright</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>汉语阅读困难儿童智能诊断辅助系统 [简称：辅助阅读AI智能系统] V1.0</li>
+            </ul>
           </div>
 
           {/* 在线学习和社群学习研究 */}
@@ -72,7 +76,7 @@ export default function Research() {
             <h2 className="text-2xl font-bold mb-4">在线学习和社群学习研究</h2>
             <h3 className="text-xl font-semibold mb-3">项目基金 Fundings</h3>
             <ul className="list-disc pl-5 mb-4 space-y-2">
-              <li>2023年度上海市晨光计划项目，在研</li>
+              <li>2023年度上海市晨光计划项目，结项</li>
             </ul>
             <h3 className="text-xl font-semibold mb-3">相关论文 Articles</h3>
             <ul className="list-disc pl-5 space-y-2">
@@ -104,6 +108,11 @@ export default function Research() {
               <li>Dai, J., Gu, X., & Zhu, J. (2022). Personalized Recommendation in the Adaptive Learning System: The Role of Adaptive Testing Technology. Journal of Educational Computing Research. [SSCI-Q1, IF=4.35]</li>
               <li>Zhu, J., Dawson, K., Rizhaupt, A.D., & Antonenko, P.P. (2020). Investigating how multimedia and modality design principles influence student learning performance, satisfaction, mental effort, and visual attention. Journal of Educational Multimedia and Hypermedia, 29(3), 265-284. [IF=0.50]</li>
               <li>Zhu, J. (2018, October). Students&apos; Perceptions on the Use of Mobile Applications in English Language Learning. In Proceedings of E-Learn: World Conference on E-Learning.</li>
+              <li>王家圆, 陆雨萱, 张熠帆, 等. (2026). 高校AIGC应用制度的全球图景与本土化启示. 上海教育, (12), 63-64.</li>
+              <li>何昊, 朱嘉文. (2025). 扩展现实技术的分类、应用与发展展望. 上海教育, (21), 60-61.</li>
+              <li>梁桓源, 朱嘉文. (2025). 初中信息技术教学与品德教育的融合实践. 上海教育, (12), 67.</li>
+              <li>金颖, 朱嘉文. (2024). 基于“学校大脑+元宇宙”的劳育与德育“碳中和小达人”项目实践. 上海教育, (12), 52-53.</li>
+              <li>朱嘉文. (2023). 教育4.0时代, 以数字教育生态视角看未来学习与人才培养. 上海教育, (19), 50-51.</li>
             </ul>
           </div>
         </div>

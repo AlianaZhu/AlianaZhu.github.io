@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-6">邮箱 Email</h2>
           <div className="text-lg">
-            <a href="mailto:your.email@ecnu.edu.cn" 
+            <a href="mailto:zhujiawen@ed.ecnu.edu.cn" 
                className="text-blue-600 hover:underline">
               zhujiawen@ed.ecnu.edu.cn
             </a>

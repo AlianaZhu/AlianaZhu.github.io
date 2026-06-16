@@ -57,7 +57,9 @@ export default function Services() {
             <div className="border-l-4 border-blue-600 pl-4">
               <h3 className="text-xl font-semibold">期刊编辑</h3>
               <ul className="mt-3 space-y-2">
+                <li>• Editorial Board Member, Journal of Formative Design in Learning</li>
                 <li>• Assistant Editor, International Journal of Smart Technology and Learning</li>
+                <li>• 《上海教育》“数智新教育”专栏责任编辑</li>
               </ul>
             </div>
           </div>
@@ -98,6 +100,7 @@ export default function Services() {
           <div className="space-y-4">
             <div className="border-l-4 border-blue-600 pl-4">
               <ul className="mt-3 space-y-2">
+                <li>• 中国教育技术协会学习科学专业委员会委员</li>
                 <li>• 中国高等教育学会学习科学研究分会博士生论坛委员会委员</li>
               </ul>
             </div>
