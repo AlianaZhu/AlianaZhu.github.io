@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   },
   basePath: '',
   assetPrefix: '',
-  distDir: 'out',
   trailingSlash: true,
 };
 
